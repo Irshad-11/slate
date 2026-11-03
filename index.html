@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slate · Private notes and diagrams</title>
+    <meta name="description" content="Slate is a private workspace that keeps markdown notes and an infinite canvas side by side. One owner, one key." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Slate" />
+    <meta property="og:description" content="A private workspace for markdown notes and diagrams. One owner, one key." />
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Crect x='520' y='235' width='160' height='160' rx='36' fill='%23818cf8'/%3E%3Cpath d='M565 300h70M565 330h44' stroke='%23000' stroke-width='14' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Slate" />
+    <meta name="twitter:description" content="A private workspace for markdown notes and diagrams." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 13h14M9 19h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <script>
+      try {
+        var t = localStorage.getItem('slate-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+      } catch (e) { document.documentElement.dataset.theme = 'light'; }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
